@@ -1,0 +1,32 @@
+# Prerequisites
+
+Tested on Python 3.7.2 bit should likely work on Python 3.6, 3.7 or above.
+
+* Install NetworkX Python library [ https://networkx.github.io/ ]:
+
+pip install networkx
+
+
+# Extracting a SmartGraph subnetwork
+
+* Download a network from SmartGraph [ https://smartgraph.ncats.io ] using the "Download graph" button at the bottom-left corner of the network visualization panel, then selecting the "Cytoscape JSON" option.
+
+# Convert the downloaded file to "Cytoscape JSON" compliant format.
+
+In the example command-line below substitute "sg_export_example" with the filename of your downloaded network in "Cytoscape JSON" format.
+
+(Please use the ".cyjs" extension in the output filename as shown in the command line below.)
+
+Command-line:
+
+
+python sg_cleanup_cyjs.py sg_export_example sg_network.cyjs
+
+
+
+* Import to "Cytoscape" desktop client
+
+Go to "File->Import->Network->File" and select the output file you generated above, i.e. "sg_network.cyjs" in the example.
+
+Of note, you'll need to run a layout algorithm on the imported network.
+

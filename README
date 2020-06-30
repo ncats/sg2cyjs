@@ -1,0 +1,4 @@
+* Components from the Python library NetworkX are utilized in the source code that are not distributed under the MIT license.
+
+- NetworkX [https://networkx.github.io/]  License type: 3-clause BSD license, please refer to the 3-clause BSD licensing terms  [ https://raw.githubusercontent.com/networkx/networkx/master/LICENSE.txt ]
+
